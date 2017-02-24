@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Reflection"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="350" Width="585.963">
+    <Grid Background="#FF91E4E0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="63*"/>
+            <ColumnDefinition Width="226*"/>
+        </Grid.ColumnDefinitions>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="100" Margin="14.184,141,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1">
+            <MenuItem Header="MenuItem"/>
+            <MenuItem Header="MenuItem"/>
+        </Menu>
+        <Button x:Name="button" Content="Choose directory" HorizontalAlignment="Left" Margin="76.184,10,0,277" Width="124" Click="button_Click" Grid.Column="1"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="43,60,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2">
+            <ComboBoxItem Content="ComboBoxItem" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <TextBox x:Name="textBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="236,82,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="textBox_TextChanged"/>
     </Grid>
 </Window>
